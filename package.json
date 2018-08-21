@@ -1,0 +1,11 @@
+{
+	"name": "lnd-unlocker",
+	"version": "1.0.0",
+	"license": "MIT",
+	"dependencies": {
+		"grpc": "^1.14.1"
+	},
+	"scripts": {
+		"unlock": "node unlocker.js"
+	}
+}
