@@ -1,0 +1,7 @@
+FROM guggero/lnd as lnd-bin
+
+FROM guggero/lnd-unlocker as final
+
+COPY --from=lnd-bin /bin/lncli /bin/
+COPY --from=lnd-bin /bin/lnd /bin/
+
