@@ -5,7 +5,6 @@ RUN apk update && \
     apk add git
 
 RUN go get -d github.com/LN-Zap/zapconnect  
-RUN echo $GOPATH
 RUN cd $GOPATH/src/github.com/LN-Zap/zapconnect && go get ./... && go install -v ./...
 
 FROM guggero/lnd as lnd-bin
